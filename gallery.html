@@ -399,16 +399,16 @@ a:hover { color: var(--gold-pale); }
 .photo-card:hover { border-color: var(--border-bright); transform: translateY(-2px); }
 
 .photo-card-img {
-  width: 100%; aspect-ratio: 4/3;
-  object-fit: cover;
-  filter: sepia(.6) contrast(1.05) brightness(.9);
+  width: 100%; height: auto; display: block;
+  object-fit: contain;
+  filter: none;
   transition: filter .5s, transform .5s;
+  background: var(--charcoal);
 }
-.photo-card:first-child .photo-card-img { aspect-ratio: 16/9; }
+
 
 .photo-card:hover .photo-card-img {
-  filter: sepia(.3) contrast(1.08) brightness(.95);
-  transform: scale(1.02);
+  filter: none;
 }
 
 .photo-card-caption {
@@ -531,13 +531,13 @@ a:hover { color: var(--gold-pale); }
 
 .gallery-item img {
   width: 100%;
+  height: auto;
   display: block;
-  filter: sepia(.55) contrast(1.05) brightness(.88);
-  transition: filter .5s, transform .5s;
+  filter: none;
+  transition: filter .5s;
 }
 .gallery-item:hover img {
-  filter: sepia(.25) contrast(1.1) brightness(.95);
-  transform: scale(1.03);
+  filter: none;
 }
 
 .gallery-item-info {
@@ -595,7 +595,7 @@ a:hover { color: var(--gold-pale); }
   width: auto;
   max-width: 100%;
   margin: 0 auto;
-  filter: sepia(.4) contrast(1.05);
+  filter: none;
   border: 1px solid var(--border);
 }
 
@@ -653,13 +653,13 @@ a:hover { color: var(--gold-pale); }
 }
 
 .ba-before img {
-  filter: sepia(.8) contrast(.9) brightness(.8);
+  filter: none;
   position: absolute; top: 0; left: 0; width: 100%; height: 100%;
   object-fit: cover;
 }
 
 .ba-after img {
-  filter: sepia(.2) contrast(1.05) brightness(.95);
+  filter: none;
 }
 
 .ba-handle {
@@ -788,7 +788,7 @@ a:hover { color: var(--gold-pale); }
 }
 .about-portrait img {
   width: 100%;
-  filter: sepia(.65) contrast(1.05) brightness(.88);
+  filter: none;
   border: 1px solid var(--border);
 }
 .about-portrait-caption {

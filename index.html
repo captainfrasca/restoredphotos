@@ -380,11 +380,13 @@ a:hover { color: var(--gold-pale); }
 .featured-grid {
   columns: 3;
   column-gap: 1.5rem;
+  column-fill: balance;
 }
 .featured-grid .card {
   break-inside: avoid;
   margin-bottom: 1.5rem;
-  display: block;
+  display: inline-block;
+  width: 100%;
 }
 
 .photo-card {
@@ -515,11 +517,14 @@ a:hover { color: var(--gold-pale); }
 .gallery-masonry {
   columns: 3;
   column-gap: 1.4rem;
+  column-fill: balance;
 }
 
 .gallery-item {
   break-inside: avoid;
   margin-bottom: 1.4rem;
+  display: inline-block;
+  width: 100%;
   position: relative;
   border: 1px solid var(--border);
   overflow: hidden;
